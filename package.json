@@ -1,0 +1,36 @@
+{
+  "name": "glitch-questions",
+  "version": "0.1.0",
+  "description": "A simple method that checks for questions on Glitch",
+  "main": "index.js",
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tribakzero/glitch-questions.git"
+  },
+  "keywords": [
+    "tribak",
+    "glitch.com",
+    "questions",
+    "thenable",
+    "request",
+    "promise",
+    "glitch",
+    "https"
+  ],
+  "author": "Alejandro Camarillo <tribak.zero@gmail.com> (https://tribak.dev)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tribakzero/glitch-questions/issues"
+  },
+  "homepage": "https://github.com/tribakzero/glitch-questions#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.1"
+  }
+}
