@@ -1,4 +1,6 @@
 # Glitch Questions
+[![Build Status](https://travis-ci.org/tribakzero/glitch-questions.svg?branch=master)](https://travis-ci.org/tribakzero/glitch-questions)
+[![Coverage Status](https://coveralls.io/repos/github/tribakzero/glitch-questions/badge.svg?branch=master)](https://coveralls.io/github/tribakzero/glitch-questions?branch=master)
 
 A simple method that checks for questions on Glitch
 
