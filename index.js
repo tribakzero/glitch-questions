@@ -23,6 +23,5 @@ const parseQuestions = questions => {
 module.exports = () => {
   var url = 'https://api.glitch.com/projects/questions';
   return getURL(`${url}?cache=${currentTimestamp()}`)
-    .then(res => response)
     .then(parseQuestions);
 }
