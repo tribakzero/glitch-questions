@@ -1,6 +1,6 @@
 {
   "name": "glitch-questions",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "A simple method that checks for questions on Glitch",
   "main": "index.js",
   "engines": {
