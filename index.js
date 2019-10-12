@@ -13,9 +13,9 @@ const makeProjectURL = (domain, path, line, character) =>
 const parseQuestions = questions => {
   const parsedQuestions = questions.map(question => JSON.parse(question.details));
   const output = parsedQuestions.map(data => {
-    const { domain, path, line, character, question } = data;
+    const { domain, path, line, character, question, questionId } = data;
     const url  = makeProjectURL(domain, path, line, character);
-    return { url, question };
+    return { url, question, questionId };
   });
   return output;
 }
