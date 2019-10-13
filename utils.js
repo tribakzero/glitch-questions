@@ -1,6 +1,7 @@
 'use strict';
 
 const request = require('request');
+const util = require('util');
 
 const rp = util.promisify(request);
 
