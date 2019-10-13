@@ -37,6 +37,6 @@
     "mocha": "^6.2.1"
   },
   "dependencies": {
-    "request-promise-native": "^1.0.7"
+    "request": "^2.88.0"
   }
 }

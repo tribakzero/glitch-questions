@@ -1,13 +1,16 @@
 'use strict';
 
-const rp = require('request-promise-native');
+const request = require('request');
+
+const rp = util.promisify(request);
 
 const currentTimestamp = () => new Date().getTime();
 
 const makeRequestURL = () =>
 `https://api.glitch.com/projects/questions?cache=${currentTimestamp()}`;
 
-const makeRequest = () => rp({ uri: makeRequestURL(), json: true });
+const makeRequest = () =>
+  rp(makeRequestURL()).then(res => JSON.parse(res.body));
 
 const makeProjectURL = (domain, path, line, character) =>
   `https://glitch.com/edit/#!/${domain}?path=${path}:${line}:${character}`;
