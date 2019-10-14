@@ -20,7 +20,7 @@ const makeRequest = () =>
 const makeProjectURL = (domain, path, line, character) =>
   `https://glitch.com/edit/#!/${domain}?path=${path}:${line}:${character}`;
 
-const getQuestionsDetails = (questions) =>
+const getQuestionsDetails = (questions) => console.log(questions) &&
   questions.map(question => JSON.parse(question.details));
 
 const constructOutput = ({ domain, path, line, character, question, questionId }) =>
