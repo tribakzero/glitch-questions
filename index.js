@@ -8,4 +8,4 @@ const { makeRequest, parseQuestions } = require('./utils');
 */
 
 module.exports = () =>
-  makeRequest().then(res => parseQuestions(res));
+  makeRequest().then(({body}) => parseQuestions(body));
