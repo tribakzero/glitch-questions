@@ -27,6 +27,6 @@ const constructOutput = ({ domain, path, line, character, question, questionId }
   });
 
 const parseQuestions = questions =>
-  getQuestionsDetails(questions).map(details => constructOutput);
+  getQuestionsDetails(questions).map(details => constructOutput(details));
 
 module.exports = { makeRequest, parseQuestions };
