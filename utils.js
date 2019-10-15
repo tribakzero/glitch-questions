@@ -5,10 +5,10 @@ const util = require('util');
 
 const rp = util.promisify(request);
 
-const currentTimestamp = () => new Date().getTime();
+const getTimestamp = () => new Date().getTime();
 
 const makeRequestURL = () =>
-`https://api.glitch.com/projects/questions?cache=${currentTimestamp()}`;
+`https://api.glitch.com/projects/questions?cache=${getTimestamp()}`;
 
 const makeRequest = () =>
   rp({
@@ -33,4 +33,9 @@ const constructOutput = ({ domain, path, line, character, question, questionId }
 const parseQuestions = questions =>
   getQuestionsDetails(questions).map(details => constructOutput(details));
 
-module.exports = { makeRequest, parseQuestions };
+module.exports = {
+  getTimestamp,
+  makeRequestURL,
+  makeRequest,
+  parseQuestions
+};
